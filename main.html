@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-gFIkkTBJyOz4xUdNRI7AVPwq7GHbvn4JHZjxGwArP1imz0q7VUs8sohoiC6nvXr1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Bmt9okBIEvJtkjUe7F0UtxHP12yVVru8VxHzjB//94WJSsYjEmJg+DAXJArW1xJ5sev78mXUq27mrK4LxTQqzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" type="x-icon" href="website icon.png">
+
+<div class="w3-top">
+<div class="logo-display">
+<img src="logodisplay.png" alt="displaylogo" class="spinning-logo">
+  </div>
+</div>
+<style>
+    
+    .logo-display {
+position: fixed;
+top: 10px; /* Adjust the distance from the top */
+left: 10px; /* Adjust the distance from the left */
+}
+
+.spinning-logo {
+width: 200px; /* Adjust the size of your logo */
+height: 200px; /* Adjust the size of your logo */
+animation: spin 4s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes spin {
+from {
+ transform: rotate(0deg);
+}
+to {
+ transform: rotate(360deg);
+}
+}
+ </style>
+<style>
+    /* Additional Custom Styles */
+    .w3-bar {
+      background-color: #333; /* Background color */
+      overflow: hidden;
+    }
+  
+    .w3-bar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+  
+    .w3-bar a:hover {
+      background-color: #ddd; /* Change color on hover */
+      color: black;
+    }
+  
+    /* Position the navigation bar at the top right */
+    .w3-right-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header class="w3-display-container w3-black w3-content w3-center" id="home" style="max-width:1500px">
+    <video id="myVideo" class="w3-image" src="sampledisplay.mp4" autoplay muted loop></video>
+    
+    <div class="w3-display-middle w3-padding" style="position: absolute;">
+      <h1 style="color: rgb(255, 255, 255); font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);" class="w3-display-text">Text Here!</h1>
+</header>   
+  <section id="content">
+    <div class="w3-display-container w3-content w3-center w3-black" style="max-width:1500px">
+        <video id="myVideo" class="w3-image" src="displaysample.mp4" autoplay muted loop></video>
+    <div class="w3-right-container">
+        <div class="w3-bar rounded-bar w3-animate-opacity" style="background-color: transparent;">           
+          <a href="#about" class="w3-bar-item w3-button" style="font-size: 25px; margin-right: 150px; border-radius: 100px;">About</a>
+          <a href="#services" class="w3-bar-item w3-button" style="font-size: 25px; margin-right: 150px; border-radius: 100px;">Services</a>
+          <a href="#contact" class="w3-bar-item w3-button" style="font-size: 25px; margin-right: 350px; border-radius: 100px;">Contact</a>
+          <style>
+          .rounded-bar {
+            background-color: transparent;
+            text-align: center;
+        }
+
+        .rounded-bar a {
+            font-size: 25px;
+            margin: 0 20px; /* Adjust the spacing between links */
+            padding: 10px 20px; /* Adjust the padding to control the overall size */
+            border-radius: 100px;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .rounded-bar a:hover {
+            opacity: 0.7;
+        }
+
+        /* Keyframes for opacity animation */
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .w3-animate-opacity {
+            animation: fadeInOut 3s infinite; /* Adjust the duration and iteration as needed */
+        }
+            .rounded-bar {
+              border-radius: 30px;
+            }
+            .w3-bar-item {
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    .w3-bar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .w3-bar a {
+        text-decoration: none;
+        padding: 15px;
+        font-size: 20px;
+        margin-right: 50px;
+        border-radius: 100px;
+        transition: transform 0.3s ease; /* Add a smooth transition */
+        color: #ffffff;
+    }
+
+    .w3-bar a:hover {
+        transform: scale(1.1); /* Scale up the link when hovered */
+    }
+
+    /* Additional styling for illustration purposes */
+    .rounded-bar {
+        background-color: #9100ab; /* Change background color */
+        padding: 10px;
+        border-radius: 20px; /* Add some border-radius for a rounded appearance */
+    }
+          </style>  
+        </div>
+      </div>
+      <h2>SERVICES</h2>
+       <!-- 1st Pic -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large">
+        <img src="displaypic.png" alt="displaypic" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+        <style>
+        .w3-row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .w3-col {
+            flex: 0 0 50%; /* Adjust the width of the columns as needed */
+            box-sizing: border-box;
+        }
+
+        .w3-col img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease; /* Add a smooth transition */
+        }
+
+        .w3-col:hover img {
+            transform: scale(1.1); /* Scale the image when hovered */
+        }
+
+        .w3-col.m6 {
+            padding: 20px; /* Adjust padding as needed */
+        }
+
+        .w3-col.m6 h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .w3-col.m6 p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+        }
+    </style>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Insert Text</h1><br>
+        <p class="w3-large move-on-hover" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;">Insert Text</p>
+    </div>
+    <style>
+        .move-on-hover {
+    transition: transform 0.3s ease; /* Apply transition effect */
+}
+
+.move-on-hover:hover {
+    transform: translateX(10px); /* Move the paragraph horizontally by 10 pixels */
+}
+    </style>
+</div>
+ <!-- 2nd Pic -->
+ <div class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Insert Text</h1><br>
+        <p class="w3-large move-on-hovers" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Insert Text</p>
+    </div>
+    <style>
+        .move-on-hovers {
+    transition: transform 0.3s ease; /* Apply transition effect */
+}
+
+.move-on-hovers:hover {
+    transform: translateX(-10px); /* Move the paragraph horizontally by 10 pixels */
+}
+    </style>
+    <div class="w3-col m6 w3-padding-large">
+        <img src="displaypic.png" alt="displaypic" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+    </div>
+</div>
+       <!-- 3rd Pic -->
+       <div class="w3-row w3-padding-64">
+        <div class="w3-col m6 w3-padding-large">
+            <img src="displaypic.png" alt="displaypic" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+        </div>
+    
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">Insert Text</h1><br>
+            <p class="w3-large move-on-hover" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;">Insert Text</p>
+        </div>
+        <style>
+            .move-on-hover {
+        transition: transform 0.3s ease; /* Apply transition effect */
+    }
+    
+    .move-on-hover:hover {
+        transform: translateX(10px); /* Move the paragraph horizontally by 10 pixels */
+    }
+        </style>
+    </div>
+     <!-- 4th Pic -->
+     <div class="w3-row w3-padding-64">
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">Insert Text</h1><br>
+            <p class="w3-large move-on-hovers" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Insert Text</p>
+        </div>
+        <style>
+            .move-on-hovers {
+        transition: transform 0.3s ease; /* Apply transition effect */
+    }
+    
+    .move-on-hovers:hover {
+        transform: translateX(-10px); /* Move the paragraph horizontally by 10 pixels */
+    }
+        </style>
+        <div class="w3-col m6 w3-padding-large">
+            <img src="displaypic.png" alt="displaypic" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+        </div>
+    </div>
+           <!-- 5th Pic -->
+           <div class="w3-row w3-padding-64">
+            <div class="w3-col m6 w3-padding-large">
+                <img src="displaypic.png" alt="displaypic" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+            </div>
+        
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">Insert Text</h1><br>
+                <p class="w3-large move-on-hover" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;">Insert Text</p>
+            </div>
+            <style>
+                .move-on-hover {
+            transition: transform 0.3s ease; /* Apply transition effect */
+        }
+        
+        .move-on-hover:hover {
+            transform: translateX(10px); /* Move the paragraph horizontally by 10 pixels */
+        }
+            </style>
+        </div>
+
+<div class="w3-row">
+<style>
+    .w3-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .w3-col {
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .w3-card-4 {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #733381; /* Example background color */
+    }
+
+    .w3-card-4 img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .w3-container {
+        padding: 16px;
+        text-align: center;
+    }
+</style>
+<!--1st Row-->
+<style>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-col {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.w3-card-4 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.w3-card-4:hover {
+    transform: scale(1.05); /* Scale the card when hovered */
+}
+
+.w3-container {
+    padding: 16px;
+    text-align: center;
+}
+
+/* Additional styles for illustration purposes */
+.w3-card-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.w3-card-4 h3 {
+    margin: 10px 0;
+}
+</style>
+<h2 style="margin-bottom: 55px;">Sample Work</h2>
+<div class="w3-col" id="services">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 1">
+        <div class="w3-container">
+            <h3>Card Title 1</h3>
+            <p>Description for Card 1.</p>
+        </div>
+    </div>
+</div>
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 2">
+        <div class="w3-container">
+            <h3>Card Title 2</h3>
+            <p>Description for Card 2.</p>
+        </div>
+    </div>
+</div>
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 1">
+        <div class="w3-container">
+            <h3>Card Title 3</h3>
+            <p>Description for Card 3.</p>
+        </div>
+    </div>
+</div>
+  <!-- Second Row -->
+  <div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 4">
+        <div class="w3-container">
+            <h3>Card Title 4</h3>
+            <p>Description for Card 4.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 5">
+        <div class="w3-container">
+            <h3>Card Title 5</h3>
+            <p>Description for Card 5.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 6">
+        <div class="w3-container">
+            <h3>Card Title 6</h3>
+            <p>Description for Card 6.</p>
+        </div>
+    </div>
+</div>
+  <!-- Third Row -->
+  <div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 4">
+        <div class="w3-container">
+            <h3>Card Title 7</h3>
+            <p>Description for Card 7.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 5">
+        <div class="w3-container">
+            <h3>Card Title 8</h3>
+            <p>Description for Card 8.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 6">
+        <div class="w3-container">
+            <h3>Card Title 9</h3>
+            <p>Description for Card 9.</p>
+        </div>
+    </div>
+</div>
+  <!-- Fourth Row -->
+  <div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 4">
+        <div class="w3-container">
+            <h3>Card Title 10</h3>
+            <p>Description for Card 10.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 5">
+        <div class="w3-container">
+            <h3>Card Title 11</h3>
+            <p>Description for Card 11.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-col">
+    <div class="w3-card-4">
+        <img src="displaypic.png" alt="Image 6">
+        <div class="w3-container">
+            <h3>Card Title 12</h3>
+            <p>Description for Card 12.</p>
+        </div>
+    </div> 
+</div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-section {
+        text-align: center;
+        padding: 50px;
+        background-color: #f4f4f4;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+    .submit-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .submit-button:hover {
+        background-color: #45a049;
+    }
+
+    .map-container {
+        max-width: 800px;
+        margin: 20px auto;
+        height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .map-placeholder {
+        width: 100%;
+        height: 100%;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+    }
+</style>
+  </section>
+  <div class="w3-container w3-padding-32 w3-black" id="about">
+    <div class="w3-container w3-padding-32 w3-black" id="about">
+        <h2 class="w3-center" style="margin-bottom: 50px;">Work Partners</h2>
+        <style>
+            h2 {
+                position: relative;
+                font-size: 6em;
+                letter-spacing: 15px;
+                color: darkmagenta;
+                text-transform: uppercase;
+                width: 100%;
+                text-align: center;
+                -webkit-box-reflect: below 1px linear-gradient(transparent,darkmagenta);
+                line-height: 0.70em;
+                outline: none;
+                animation: animate 5s linear infinite;
+            }
+            @keyframes animate {
+                0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+                {
+                    color: darkmagenta;
+                    box-shadow: none;
+                }
+                18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+                    color: #fff;
+                    text-shadow: 0 0 10px darkmagenta,
+                    0 0 20px darkmagenta,
+                    0 0 40px darkmagenta,
+                    0 0 80px darkmagenta,
+                    0 0 160px darkmagenta;
+                }
+            }
+
+        </style>
+<div class="slider-container">
+    <div class="w3-row slider">
+      <!-- Slide 1 -->
+      <div class="w3-col l3 m4 slider-item">
+        <img src="person1.jpg" alt="pic1" style="width: 100%;">
+        <h3>Input Name Here 1!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="w3-col l3 m4 slider-item">
+        <img src="person2.png" alt="pic2" style="width: 100%;">
+        <h3>Input Name Here 2!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="w3-col l3 m4 slider-item">
+        <img src="person3.jpg" alt="pic3" style="width: 100%;">
+        <h3>Input Name Here 3!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 4 -->
+      <div class="w3-col l3 m4 slider-item" style="display: none;">
+        <img src="person4.jpg" alt="pic4" style="width: 100%;">
+        <h3>Input Name Here 4!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 5 -->
+      <div class="w3-col l3 m4 slider-item" style="display: none;">
+        <img src="person5.jpg" alt="pic5" style="width: 100%;">
+        <h3>Input Name Here 5!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 6 -->
+      <div class="w3-col l3 m4 slider-item" style="display: none;">
+        <img src="person6.jpg" alt="pic6" style="width: 100%;">
+        <h3>Input Name Here 6!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 7 -->
+      <div class="w3-col l3 m4 slider-item" style="display: none;">
+        <img src="person7.jpg" alt="pic7" style="width: 100%;">
+        <h3>Input Name Here 7!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 8 -->
+      <div class="w3-col l3 m4 slider-item" style="display: none;">
+        <img src="person8.png" alt="pic8" style="width: 100%;">
+        <h3>Input Name Here 8!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+  
+      <!-- Slide 9 -->
+      <div class="w3-col l3 m4 slider-item" style="display: none;">
+        <img src="person9.png" alt="pic9" style="width: 100%;">
+        <h3>Input Name Here 9!</h3>
+        <p class="w3-opacity">Information</p>
+        <p>"More Information Here"</p>
+        <p><button class="w3-button w3-light-grey w3-block" style="border-radius: 30px;" onclick="showMessage('Notification sent successfully!')">Contact</button></p>
+      </div>
+    </div>
+  
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+  </div>
+  <style>
+   .slider-container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-item {
+      flex: 0 0 auto;
+      margin: 0 15px;
+      box-sizing: border-box;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+      background-color: #333;
+      border: none;
+      padding: 10px;
+      outline: none;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0.7;
+    }
+
+    .prev:hover, .next:hover {
+      opacity: 1;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+        </style>
+       <script>
+     let slideIndex = 0;
+const slides = document.querySelectorAll('.slider-item');
+const totalSlides = slides.length;
+
+function showSlides() {
+  for (let i = 0; i < totalSlides; i++) {
+    if (i < slideIndex || i >= slideIndex + 3) {
+      slides[i].style.display = 'none';
+    } else {
+      slides[i].style.display = 'block';
+    }
+  }
+}
+
+function changeSlide(n) {
+  slideIndex += n;
+  if (slideIndex > totalSlides - 3) {
+    slideIndex = 0;
+  } else if (slideIndex < 0) {
+    slideIndex = totalSlides - 3;
+  }
+  showSlides();
+}
+
+showSlides();
+      </script>
+     <!-- Contact Section -->
+     <div class="w3-container w3-padding-32 w3-black" id="contact">
+        <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="text-align: left; font-size: 20px; margin-bottom: 50px;">How's our service?</h2>
+        <p style="text-align: left;">Please leave a message.</p>
+    
+        <!-- Your form code here -->
+        <form id="myForm" action="/action_page.php" target="_blank">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+            <input class="w3-input w3-section w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-white w3-section" type="button" onclick="sendMessage();" style="float: left;">
+                <i class="fa fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+    </div>
+    <script>
+        function sendMessage() {
+            var name = document.forms["myForm"]["Name"].value;
+            var email = document.forms["myForm"]["Email"].value;
+            var message = document.forms["myForm"]["Message"].value;
+      
+    
+            if (name !== "" && email !== "" && message !== "") {
+                // Check if the email contains the "@" symbol
+                if (email.includes("@")) {
+                    showMessage('Message sent successfully!');
+                    // You can add more functionality here, such as form submission using AJAX
+                } else {
+                    alert("Please enter a valid email address.");
+                }
+            } else {
+                alert("Please fill out all fields in the form.");
+            }
+        }
+        function showMessage(message) {
+            alert(message);
+            // You can add more functionality here, such as form submission using AJAX
+        }
+    </script>
+    <style>
+        .w3-input.w3-border {
+          border-radius: 10px;
+        }
+        </style>
+               <style>
+                .w3-input.w3-section.w3-border {
+                  border-radius: 10px;
+                }
+                </style>
+                 <style>
+                    .w3-button.w3-white {
+                      border-radius: 10px;
+                    }
+                    button {
+                        text-align: left;
+                    }
+                    .w3-container {
+    overflow: hidden; /* This line may not be necessary, but it ensures the button stays within its container */
+}
+                    </style>
+</body>
+</html>
